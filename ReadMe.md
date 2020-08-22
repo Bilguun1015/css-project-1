@@ -10,3 +10,8 @@ Revisiting CSS to deepen my knowledge and learn more tricks such as CSS Grid, Fl
 - when adjacent elements have `margin` property, the bigger `margin` wins and overlaps the other block element's `margin`.
 - when a parent element's firs/last/only child have `margin`, the bigger `margin` will win
 - when there is an empty element without any other box model properties
+
+3. `pseudo`
+
+- pseudo class -- `:class name` -- defines the style of a spceial state of an element
+- pseudo element -- `::element name` -- defines the styel of a specific part of an element
