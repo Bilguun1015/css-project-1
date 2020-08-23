@@ -15,3 +15,7 @@ Revisiting CSS to deepen my knowledge and learn more tricks such as CSS Grid, Fl
 
 - pseudo class -- `:class name` -- defines the style of a spceial state of an element
 - pseudo element -- `::element name` -- defines the styel of a specific part of an element
+
+4.  HTML class names
+
+- BEM -- stand for Block, Element, Modifier -- is a popular naming convention for classes in HTML and CSS. This methodology is easier for developers to update HTML and CSS. Makes the code dry and minimize side effects on updating CSS in the future.
