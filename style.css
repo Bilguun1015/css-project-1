@@ -74,6 +74,23 @@ body {
   margin: 8px 0;
 }
 
+.button {
+  background: #0e4f1f;
+  color: white;
+  font: inherit;
+  border: 1.5px solid #0e4f1f;
+  padding: 8xp;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  background: white;
+  color: #0e4f1f;
+}
+
 .main-header {
   width: 100%;
   background-color: #81ecec;
