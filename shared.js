@@ -18,7 +18,9 @@ selectPlanButtons.forEach((button) => {
 const closeModal = () => {
   // modal.style.display = 'none';
   // backdrop.style.display = 'none';
-  modal.classList.remove('open');
+  if (modal) {
+    modal.classList.remove('open');
+  }
   backdrop.classList.remove('open');
 };
 
@@ -27,7 +29,9 @@ backdrop.addEventListener('click', () => {
   mobileNav.classList.remove('open');
   closeModal();
 });
-closeButton.addEventListener('click', closeModal);
+if (closeButton) {
+  closeButton.addEventListener('click', closeModal);
+}
 
 toggleButton.addEventListener('click', () => {
   // mobileNav.style.display = 'block';
