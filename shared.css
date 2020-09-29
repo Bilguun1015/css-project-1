@@ -13,8 +13,8 @@ body {
   top: 0;
   left: 0;
   z-index: 100;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.5);
 }
 
@@ -23,8 +23,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #81ecec;
-  padding: 8px 16px;
+  background: #2ddf5c;
+  padding: 0.5rem 1rem;
   z-index: 1;
 }
 
@@ -34,18 +34,18 @@ body {
 }
 
 .main-header__brand {
-  color: #e17055;
+  color: #0e4f1f;
   text-decoration: none;
   font-weight: bold;
-  font-size: 22px;
-  /* height: 22px; */
-  width: 22px;
+  font-size: 1.5rem;
+  height: 1.5rem;
+  /* width: 20px; */
   display: inline-block;
 }
 
 .main-header__brand img {
-  /* height: 100%; */
-  width: 100%;
+  height: 100%;
+  /* width: 100%; */
 }
 
 .main-nav {
@@ -63,41 +63,40 @@ body {
 
 .main-nav__item {
   display: inline-block;
-  text-decoration: none;
-  margin: 0 16px;
+  margin: 0 1rem;
 }
 
 .main-nav__item a {
   text-decoration: none;
-  color: #e17055;
+  color: #0e4f1f;
   font-weight: bold;
-  padding: 3px 0;
+  padding: 0.2rem 0;
 }
 
 .main-nav__item a:hover,
 .main-nav__item a:active {
-  color: #fab1a0;
-  border-bottom: 5px solid #fab1a0;
+  color: white;
+  border-bottom: 5px solid white;
 }
 
 .main-nav__item--cta a {
-  color: #fff;
+  color: white;
   background: #ff1b68;
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   border-radius: 8px;
 }
 
 .main-nav__item--cta a:hover,
 .main-nav__item--cta a:active {
   color: #ff1b68;
-  background: #fff;
+  background: white;
   border: none;
 }
 
 .main-footer {
   background: black;
-  padding: 32px;
-  margin-top: 48px;
+  padding: 2rem;
+  margin-top: 3rem;
 }
 
 .main-footer__links {
@@ -109,11 +108,11 @@ body {
 
 .main-footer__link {
   display: inline-block;
-  margin: 0 16px;
+  margin: 0 1rem;
 }
 
 .main-footer__link a {
-  color: #fff;
+  color: white;
   text-decoration: none;
 }
 
@@ -127,7 +126,7 @@ body {
   color: white;
   font: inherit;
   border: 1.5px solid #0e4f1f;
-  padding: 8xp;
+  padding: 0.5rem;
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
