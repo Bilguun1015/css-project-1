@@ -68,7 +68,7 @@ main {
   background: #fff;
   /* font-family: 'AnonymousPro', sans-serif; */
   /* font-weight: 700; */
-  font: 700 1.2rem/2 'AnonymousPro', sans-serif;
+  font-size: 1.2rem;
   /* font-style font-variant font-weight font-size/line-height font-family */
   /* text-shadow: 2px 2px 7px rgb(185, 180, 180); */
   /* line-height: 2; takes the base height of the font*/

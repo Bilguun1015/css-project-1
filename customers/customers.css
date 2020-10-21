@@ -59,7 +59,7 @@ main {
 
 .testimonial__text {
   margin: 0.2rem;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 @media (min-width: 41rem) {
