@@ -1,12 +1,34 @@
+@font-face {
+  font-family: 'AnonymousPro';
+  src: url('anonymousPro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'AnonymousPro';
+  src: url('anonymousPro-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
 main {
-  padding-top: 32px;
+  padding-top: 2rem;
+}
+
+.background {
+  background: url('../images/plans-background.jpg') center/cover;
+  filter: grayscale(40%);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  /* z-index doesn't work on element without position property */
+  z-index: -1;
 }
 
 .package {
   width: 80%;
-  margin: 16px 0;
+  margin: 1rem 0;
   border: 4px solid #0e4f1f;
   border-left: none;
+  position: relative;
 }
 
 .package:hover,
@@ -20,7 +42,18 @@ main {
   text-decoration: none;
   color: inherit;
   display: block;
-  padding: 32px;
+  padding: 2rem;
+}
+
+.package__badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1.2rem;
+  font-size: 0.8rem;
+  color: #fff;
+  background: #ff5454;
+  padding: 0.5rem;
 }
 
 .package__subtitle {
@@ -28,11 +61,17 @@ main {
 }
 
 .package__info {
-  padding: 16px;
+  padding: 1rem;
   border: 1px solid #0e4f1f;
-  font-size: 20px;
+  /* font-size: 1.2rem; */
   color: #0e4f1f;
   background: #fff;
+  /* font-family: 'AnonymousPro', sans-serif; */
+  /* font-weight: 700; */
+  font: 700 1.2rem/2 'AnonymousPro', sans-serif;
+  /* font-style font-variant font-weight font-size/line-height font-family */
+  /* text-shadow: 2px 2px 7px rgb(185, 180, 180); */
+  /* line-height: 2; takes the base height of the font*/
 }
 
 .clearfix {
@@ -66,4 +105,27 @@ main {
 
 #premium .package__subtitle {
   color: #bbb;
+}
+
+@media (min-width: 41rem) {
+  main {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1500px) {
+  .package {
+    border-left: 4px solid #0e4f1f;
+  }
+
+  #free {
+    border-right: 4px solid #0e4f1f;
+  }
+
+  #free:hover,
+  #free:active {
+    border-right-color: #ff5454;
+  }
 }
