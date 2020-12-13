@@ -22,6 +22,7 @@ main {
 .testimonial__image {
   width: 100%;
   vertical-align: top;
+  /* first values is x-axis for skew, scale one value is both x and y-axis */
   transform: skew(-20deg) scale(1.4);
 }
 
