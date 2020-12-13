@@ -11,7 +11,10 @@ selectPlanButtons.forEach((button) => {
     // backdrop.style.display = 'block';
     // modal.className = 'open'; // overwrites the class list
     modal.classList.add('open');
-    backdrop.classList.add('open');
+    backdrop.style.display = 'block';
+    setTimeout(() => {
+      backdrop.classList.add('open');
+    }, 10);
   });
 });
 
@@ -22,6 +25,10 @@ const closeModal = () => {
     modal.classList.remove('open');
   }
   backdrop.classList.remove('open');
+
+  setTimeout(() => {
+    backdrop.style.display = 'none';
+  }, 200);
 };
 
 backdrop.addEventListener('click', () => {
@@ -37,5 +44,8 @@ toggleButton.addEventListener('click', () => {
   // mobileNav.style.display = 'block';
   // backdrop.style.display = 'block';\
   mobileNav.classList.add('open');
-  backdrop.classList.add('open');
+  backdrop.style.display = 'block';
+  setTimeout(() => {
+    backdrop.classList.add('open');
+  }, 10);
 });
