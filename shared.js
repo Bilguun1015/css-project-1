@@ -52,13 +52,13 @@ toggleButton.addEventListener('click', () => {
 });
 
 ctaButton.addEventListener('animationstart', (event) => {
-  console.log('animationstart', event);
+  console.log('animation start', event);
 });
 
 ctaButton.addEventListener('animationend', (event) => {
-  console.log('animationend', event);
+  console.log('animation end', event);
 });
 
 ctaButton.addEventListener('animationiteration', (event) => {
-  console.log('animationiteration', event);
+  console.log('animation iteration', event);
 });

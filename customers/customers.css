@@ -70,7 +70,7 @@ main {
   /* white-space: nowrap; */
 }
 
-@media (min-width: 41rem) {
+@media (min-width: 40rem) {
   .testimonial {
     margin: 3rem auto;
     max-width: 1500px;
